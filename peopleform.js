@@ -1,7 +1,4 @@
-// peopleform.js
-
-import {publish, getSubscribers} from "./pubsub.js";
-import {getList} from "./people.js";
+import { publish } from "./pubsub.js";
 
 const peopleForm = () => {
 
@@ -23,7 +20,6 @@ const peopleForm = () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         publish('peopleAdd', input.value);
-        //console.log(getList());
         input.value = "";       
     })    
 

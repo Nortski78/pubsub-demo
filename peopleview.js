@@ -1,4 +1,4 @@
-import {getList} from "./people.js";
+import { getList } from "./people.js";
 import { publish } from "./pubsub.js";
 
 const renderPeople = () => {
@@ -9,7 +9,6 @@ const renderPeople = () => {
     const list = document.createElement('ul');
 
     getList().forEach((item, index) => {
-        //console.log(item);
         const listItem = document.createElement('li');
         listItem.textContent = item;
         listItem.setAttribute('id', index);

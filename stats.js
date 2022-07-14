@@ -1,5 +1,5 @@
-import {subscribe} from "./pubsub.js";
-import {getList} from "./people.js";
+import { subscribe } from "./pubsub.js";
+import { getList } from "./people.js";
 
 let numPeople = getList().length;
 
