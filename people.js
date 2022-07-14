@@ -5,7 +5,7 @@ let list = ['Tom', 'Dick', 'Harry'];
 
 const addPerson = (person) => { 
     list.push(person);
-    renderPeople();
+    //renderPeople();
 }
 
 const removePerson = (id) => { 

@@ -9,18 +9,25 @@ const renderPeople = () => {
     const list = document.createElement('ul');
 
     getList().forEach((item, index) => {
-        const listItem = document.createElement('li');
-        listItem.textContent = item;
-        listItem.setAttribute('id', index);
-        list.appendChild(listItem);
-
-        // Bind events
-        listItem.addEventListener('click', () => {
-            publish('peopleRemove', index);
-        });
+       let person = renderPerson(list, item, index);
+        person.setAttribute('id', index);
     })
 
     return list;
 };
+
+function renderPerson(list, value, index)
+{
+  const listItem = document.createElement('li');
+  listItem.textContent = value;
+  list.appendChild(listItem);
+
+  // Bind events
+  listItem.addEventListener('click', () => {
+    publish('peopleRemove', index);
+  });
+
+  return listItem;
+}
 
 export default renderPeople;
