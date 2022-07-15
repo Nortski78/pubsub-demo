@@ -25,7 +25,7 @@ const updatePeopleList = (() => {
     })
 })();
 
-const updateStata = (() => {
+const updateStats = (() => {
     subscribe('peopleAdd', () => {
         statsContainer.innerHTML = "";
         statsContainer.appendChild(renderStats());
