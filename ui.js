@@ -9,6 +9,7 @@ const peopleListContainer = document.querySelector('#people-list');
 const statsContainer = document.querySelector('#stats');
 
 export const loadPage = () => {
+    console.log("In loadPage()");
     peopleFormContainer.appendChild(peopleForm());
     peopleListContainer.appendChild(renderPeople());
     statsContainer.appendChild(renderStats());

@@ -5,6 +5,7 @@ let numPeople = getList().length;
 
 const getStats = () => numPeople;
 const updateStats = () => {
+    console.log("In updateStats()");
     numPeople = getList().length;
 }
 

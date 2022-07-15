@@ -3,6 +3,7 @@ import { publish } from "./pubsub.js";
 
 const renderPeople = () => {
 
+    console.log("In renderPeople()");
     console.log(getList());
 
     // Create elements
