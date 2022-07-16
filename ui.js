@@ -16,6 +16,7 @@ export const loadPage = () => {
 }
 
 const updatePeopleList = (() => {
+    console.log('in updatePeopleList()');
     subscribe('peopleAdd', () => {
         peopleListContainer.innerHTML = "";
         peopleListContainer.appendChild(renderPeople());
